@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <form id="user-form">
+            <input type="hidden" id="user-id"> <!-- Hidden field for user ID -->
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="number" id="weight" placeholder="Weight (kg)" required>
+            <input type="number" id="height" placeholder="Height (cm)" required>
+            <input type="text" id="healthGoals" placeholder="Health Goals" required>
+            <button type="submit" id="submit-btn">Create User</button>
+        </form>
+
+        <!-- Button to Get All Users -->
+        <button id="get-users-btn">Get All Users</button>
+
+        <!-- List of Users -->
+        <div id="users-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
